@@ -1,0 +1,1 @@
+This project will be my first one utilizing Javascript. I will be adding a front end later on.
