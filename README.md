@@ -1,1 +1,1 @@
-This project will be my first one utilizing Javascript. I will be adding a front end later on.
+A simple Rock Paper Scissors game using Javascript, CSS, & HTML. The game was originally created as an exercise using only JS alerts and a basic HTML file. Later, I used what I learned about DOM manipulation to create a functional game with some fun CSS styling. Enjoy!
