@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 100vh;
+    background-color: #68788C;
+}
+
+.score{
+    color: #F2EEB3;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.score h2 {
+    font-size: 30px;
+
+}
+
+.score p{
+    font-size: 30px;
+    text-align: center;
+    padding: 8px;
+}
+
+.intro{
+    color: #F2EEB3;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Mouse Memoirs', sans-serif;
+    transition: opacity 0.5s ease 0.5s;
+}
+
+.intro h1{
+    font-size: 60px;
+}
+
+.intro button,
+.match button {
+    width: 150px;
+    height: 80px;
+    background:none;
+    border: none;
+    color: #F2EEB3;
+    font-size: 30px;
+    background: #979DA6;
+    border-radius: 3px;
+    font-family: 'Mouse Memoirs', sans-serif;
+    cursor: pointer;
+    outline-color: #F2D64B;
+}
+
+.match{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    transition: opacity 0.5s ease 0.5s;
+}
+.winner{
+    color: #F2EEB3;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Mouse Memoirs', sans-serif;
+
+}
+
+.hands, 
+.options {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+}
+
+.user-hand{
+    transform: rotateY(180deg);
+}
+
+div.fadeOut{
+    opacity: 0;
+    pointer-events:none;
+}
+
+div.fadeIn{
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+
+@keyframes shakeUser {
+    0% {
+      transform: rotateY(180deg) translateY(0px);
+    }
+    15% {
+      transform: rotateY(180deg) translateY(-50px);
+    }
+    25% {
+      transform: rotateY(180deg) translateY(0px);
+    }
+    35% {
+      transform: rotateY(180deg) translateY(-50px);
+    }
+    50% {
+      transform: rotateY(180deg) translateY(0px);
+    }
+    65% {
+      transform: rotateY(180deg) translateY(-50px);
+    }
+    75% {
+      transform: rotateY(180deg) translateY(0px);
+    }
+    85% {
+      transform: rotateY(180deg) translateY(-50px);
+    }
+    100% {
+      transform: rotateY(180deg) translateY(0px);
+    }
+  }
+  
+  @keyframes shakeComputer {
+    0% {
+      transform: translateY(0px);
+    }
+    15% {
+      transform: translateY(-50px);
+    }
+    25% {
+      transform: translateY(0px);
+    }
+    35% {
+      transform: translateY(-50px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    65% {
+      transform: translateY(-50px);
+    }
+    75% {
+      transform: translateY(0px);
+    }
+    85% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
